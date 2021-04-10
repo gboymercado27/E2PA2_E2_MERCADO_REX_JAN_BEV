@@ -1,0 +1,72 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="experiment.css">
+</head>
+<body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+<div class="container" style='height: 650px; border: solid 5px maroon; border-width: 5px 5px 5px 5px'>
+	<div class="row justify-content-center">
+	 	<div class="col-5 bg-light">
+	 		<button type="button" id="hey1" class="btn1 btn-light">About</button>
+				<button type="button" id="hey2" class="btn2 btn-light">Education</button>
+				<button type="button" id="hey3" class="btn3 btn-light">My Skills</button>
+				<button type="button" id="hey4" class="btn4 btn-light">Contact</button>
+	 	</div>
+
+	 	<div id="front" class="header2 col-7 col-sm-8"><img class="img1" src="experiment.jpg">
+	 	
+	 	<h5 id="first">Rex Jan Bev Mercado</h5>
+	 	
+	 	</div>
+
+	 	<div id="header11" class="header1 col-7 col-sm-8"><h3 id="header1" class="h11"></h3>
+	 	</div>
+
+	 	<div class="header3 col-7 col-sm-8"><p id="header3" class="head3"></p>
+	 	</div>
+
+	</div>
+
+</div>
+<script>
+document.getElementById("hey1").onclick = function() {myFunction()};
+document.getElementById("hey2").onclick = function() {Myfunction()};
+document.getElementById("hey3").onclick = function() {Myskills()};
+document.getElementById("hey4").onclick = function() {Mycontact()};
+
+function myFunction(){
+	
+	let about = "I am good communicator and a good leader of my team, I thirve on challenge and constantly set goals for myself.";
+
+	document.getElementById("header3").innerHTML = about;
+	document.getElementById("header1").innerHTML = "About";
+}
+
+function Myfunction(){
+let edu = "Primary school is in Itaas Elementary School,Secondary School in Muntinlupa national highschool Annex, during  my senoir highschool i graduated in Technological University of the Philippines in Cavite Campus, 3rd year college in course of Information and Computer Technology in Lyceum of Alabang ";
+
+	document.getElementById("header3").innerHTML = edu;
+	document.getElementById("header1").innerHTML = "Education";
+}
+
+function Myskills(){
+let skill = "Critical Thinking  and Problem solving, a great leader of my team and i have strong work ethic";
+
+	document.getElementById("header3").innerHTML = skill;
+	document.getElementById("header1").innerHTML = "Skills";
+}
+
+function Mycontact(){
+let Contact = "Phone Number: 09773001540/09770141523 <br>Email: rexjanbev.mercado@gmail.com/gboymercado27@gmail.com";
+
+	document.getElementById("header3").innerHTML = Contact;
+	document.getElementById("header1").innerHTML = "Contact";
+}
+
+</script>
+
+
+</body>
+</html>
